@@ -11,4 +11,8 @@ const aiNumbId = document.getElementById('my_ai-numb')
 
 const goButton = document.querySelector('#es-1 article button')
 
-/* ESERCIZIO 1 */
+goButton.addEventListener('click', function(){
+    
+})
+
+/* ESERCIZIO 2 */
