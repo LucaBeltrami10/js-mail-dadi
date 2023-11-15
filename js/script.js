@@ -6,13 +6,18 @@
 /* 4) creo condizione in cui stabilisco il numero vincitore */
 /* 4) applico eventuali elementi di stile alla pagina */
 
-const userNumbId = document.getElementById('my_user-numb')
-const aiNumbId = document.getElementById('my_ai-numb')
+const userNumbId = document.getElementById('my_user-numb');
+const aiNumbId = document.getElementById('my_ai-numb');
 
-const goButton = document.querySelector('#es-1 article button')
+const goButton = document.querySelector('#es-1 article button');
+
+let userNumb;
+let aiNumb;
 
 goButton.addEventListener('click', function(){
-    console.log('Click di VIA! rilevato')
+    console.log('Click di VIA! rilevato');
+
+
 })
 
 /* ESERCIZIO 2 */
