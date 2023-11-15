@@ -21,7 +21,15 @@ goButton.addEventListener('click', function(){
 
     userNumb = Math.floor(Math.random()* 100) + 1;
     console.log(userNumb);
-    userNumbId.innerHTML = userNumb;
+    
+
+    aiNumb = Math.floor(Math.random()* 100) + 1;
+    console.log(aiNumb);
+
+    /* userNumbId.innerHTML = userNumb;
+    aiNumbId.innerHTML = aiNumb; */
+
+    
 
 })
 
