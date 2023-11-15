@@ -9,6 +9,6 @@
 const userNumbId = document.getElementById('my_user-numb')
 const aiNumbId = document.getElementById('my_ai-numb')
 
-
+const goButton = document.querySelector('#es-1 article button')
 
 /* ESERCIZIO 1 */
