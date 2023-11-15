@@ -17,7 +17,7 @@ let aiNumb;
 userNumbId
 
 goButton.addEventListener('click', function(){
-    console.log('Click di VIA! rilevato');
+    console.log('Click rilevato');
 
     userNumb = Math.floor(Math.random()* 100) + 1;
     console.log(userNumb);
@@ -29,8 +29,13 @@ goButton.addEventListener('click', function(){
     /* userNumbId.innerHTML = userNumb;
     aiNumbId.innerHTML = aiNumb; */
 
-    
-
+    if (userNumb > aiNumb){
+        console.log('user win')
+    }else if (aiNumb > userNumb){
+        console.log('A.I. win')
+    }else{
+        console.log('no winner')
+    }
 })
 
 /* ESERCIZIO 2 */
