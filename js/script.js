@@ -53,3 +53,7 @@ goButton.addEventListener('click', function(){
 /* 4) dentro ad ogni ciclo metto in relazione l'email inserita con l'email corrispondente al numero del ciclo in corso */
 
 
+let emailUtente = prompt('inserisci email')
+
+
+
