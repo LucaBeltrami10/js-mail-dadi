@@ -12,7 +12,7 @@ const aiNumbId = document.getElementById('my_ai-numb')
 const goButton = document.querySelector('#es-1 article button')
 
 goButton.addEventListener('click', function(){
-    
+    console.log('Click di VIA! rilevato')
 })
 
 /* ESERCIZIO 2 */
