@@ -78,6 +78,8 @@ const inputPrefissoEmail = document.getElementById('input-suffiso')
 const selectTag = document.getElementById('selezione-dominio')
 const formButton = document.getElementById('form_button')
 
+const accessResult = document.getElementById('access-result')
+
 formButton.addEventListener('click', function(){
     let dominioValue = selectTag.value
     let prefissoValue = inputPrefissoEmail.value
@@ -86,7 +88,13 @@ formButton.addEventListener('click', function(){
     let emailGen = prefissoValue + dominioValue
     console.log(emailGen)
 
-    if ()
+    for (i=0; i<listaEmail.length; i++){
+        console.log('avvio ciclo di comparazione email con quelle in lista')
+
+        if( emailGen == listaEmail[i]){
+            accessResult.classList.remove('d-none')
+        }
+    }
 })
 
 
