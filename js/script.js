@@ -60,5 +60,10 @@ console.log(listaEmail)
 
 for (let i=0; i<listaEmail.length; i++){
     console.log(listaEmail[i])
+    if(emailUtente === listaEmail[i]){
+        console.log('accesso consentito')
+    }else if(emailUtente !== listaEmail[i]){
+        console.log('accesso negato')
+    }
 }
 
