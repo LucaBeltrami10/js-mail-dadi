@@ -46,3 +46,10 @@ goButton.addEventListener('click', function(){
 })
 
 /* ESERCIZIO 2 */
+
+/* 1) chiedo all'utente la sua email */
+/* 2) creo lista di email consentite con un array */
+/* 3) creo un ciclo che mi controlli tutte le email inserite nel mio array */
+/* 4) dentro ad ogni ciclo metto in relazione l'email inserita con l'email corrispondente al numero del ciclo in corso */
+
+
