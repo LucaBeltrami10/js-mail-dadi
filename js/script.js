@@ -14,8 +14,6 @@ const goButton = document.querySelector('#es-1 article button');
 let userNumb;
 let aiNumb;
 
-userNumbId
-
 goButton.addEventListener('click', function(){
     console.log('Click rilevato');
 
