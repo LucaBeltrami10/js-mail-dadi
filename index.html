@@ -34,16 +34,16 @@
         <div id="es-2" class="my_container container-fluid mt-5">
             <form class="row g-3">
                 <div class="col-6">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="text" class="form-label">Suffisso email</label>
+                    <input type="text" class="form-control" id="input-suffiso" aria-describedby="emailHelp">
                 </div>
-                <select class="col-3 form-select form-control" aria-label="Default select example">
-                    <option selected>-- Seleziona il dominio --</option>
+                <select id="selezione-dominio" class="col-3 form-select form-control" aria-label="Default select example">
                     <option value="1">Gmail.com</option>
                     <option value="2">Outlook.com</option>
                 </select>
-                <button type="submit" class="col-3 btn btn-primary">invia</button>
+                
             </form>
+            <div><button id="form_button" type="submit" class="col-3 btn btn-primary">invia</button></div>
             <div id="access-result" class="container-fluid text-center text-uppercase fw-bold d-none">Accesso acconsentito</div>
         </div>
 

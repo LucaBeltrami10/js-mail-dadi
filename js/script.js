@@ -47,13 +47,7 @@ goButton.addEventListener('click', function(){
 
 /* ESERCIZIO 2 */
 
-/* 1) chiedo all'utente la sua email */
-/* 2) creo lista di email consentite con un array */
-/* 3) creo un ciclo che mi controlli tutte le email inserite nel mio array */
-/* 4) dentro ad ogni ciclo metto in relazione l'email inserita con l'email corrispondente al numero del ciclo in corso */
-
-
-let emailUtente = prompt('inserisci email')
+/* let emailUtente = prompt('inserisci email')
 
 const listaEmail = ['luca@gmail.com', 'marco@gmail.com', 'mario@gmail.com']
 console.log(listaEmail)
@@ -68,5 +62,24 @@ for (let i=0; i<listaEmail.length; i++){
     }else if(emailUtente !== listaEmail[i]){
         console.log('accesso negato')
     }
-}
+} */
+
+/* 1) chiedo all'utente la sua email */
+/* 2) creo lista di email consentite con un array */
+/* 3) creo un ciclo che mi controlli tutte le email inserite nel mio array */
+/* 4) dentro ad ogni ciclo metto in relazione l'email inserita con l'email corrispondente al numero del ciclo in corso */
+
+
+const inputSuffissoEmail = document.getElementById('input-suffiso')
+const selectTag = document.getElementById('selezione-dominio')
+const formButton = document.getElementById('form_button')
+
+formButton.addEventListener('click', function(){
+    let selectValue = selectTag.value
+    let suffissoValue = inputSuffissoEmail.value
+    console.log(selectValue)
+    console.log(suffissoValue)
+})
+
+
 
