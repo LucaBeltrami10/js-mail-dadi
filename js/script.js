@@ -58,3 +58,7 @@ let emailUtente = prompt('inserisci email')
 const listaEmail = ['luca@gmail.com', 'marco@gmail.com', 'mario@gmail.com']
 console.log(listaEmail)
 
+for (let i=0; i<listaEmail.length; i++){
+    console.log(listaEmail[i])
+}
+
