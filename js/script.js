@@ -17,11 +17,11 @@ let aiNumb;
 goButton.addEventListener('click', function(){
     console.log('Click rilevato');
 
-    userNumb = Math.floor(Math.random()* 100) + 1;
+    userNumb = Math.floor(Math.random()* 10) + 1;
     console.log(userNumb);
     
 
-    aiNumb = Math.floor(Math.random()* 100) + 1;
+    aiNumb = Math.floor(Math.random()* 10) + 1;
     console.log(aiNumb);
 
     userNumbId.innerHTML = userNumb;
@@ -29,10 +29,19 @@ goButton.addEventListener('click', function(){
 
     if (userNumb > aiNumb){
         console.log('user win')
+        document.getElementById('you-win').classList.remove('d-none')
+        document.getElementById('you-lose').classList.add('d-none')
+        document.getElementById('pari').classList.add('d-none')
     }else if (aiNumb > userNumb){
         console.log('A.I. win')
+        document.getElementById('you-lose').classList.remove('d-none')
+        document.getElementById('you-win').classList.add('d-none')
+        document.getElementById('pari').classList.add('d-none')
     }else{
         console.log('no winner')
+        document.getElementById('pari').classList.remove('d-none')
+        document.getElementById('you-lose').classList.add('d-none')
+        document.getElementById('you-win').classList.add('d-none')
     }
 })
 
