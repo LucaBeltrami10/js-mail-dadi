@@ -14,9 +14,14 @@ const goButton = document.querySelector('#es-1 article button');
 let userNumb;
 let aiNumb;
 
+userNumbId
+
 goButton.addEventListener('click', function(){
     console.log('Click di VIA! rilevato');
 
+    userNumb = Math.floor(Math.random()* 100) + 1;
+    console.log(userNumb);
+    userNumbId.innerHTML = userNumb;
 
 })
 
