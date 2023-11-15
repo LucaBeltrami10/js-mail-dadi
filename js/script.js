@@ -24,8 +24,8 @@ goButton.addEventListener('click', function(){
     aiNumb = Math.floor(Math.random()* 100) + 1;
     console.log(aiNumb);
 
-    /* userNumbId.innerHTML = userNumb;
-    aiNumbId.innerHTML = aiNumb; */
+    userNumbId.innerHTML = userNumb;
+    aiNumbId.innerHTML = aiNumb;
 
     if (userNumb > aiNumb){
         console.log('user win')
