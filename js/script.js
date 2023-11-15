@@ -6,5 +6,9 @@
 /* 4) creo condizione in cui stabilisco il numero vincitore */
 /* 4) applico eventuali elementi di stile alla pagina */
 
+const userNumbId = document.getElementById('my_user-numb')
+const aiNumbId = document.getElementById('my_ai-numb')
+
+
 
 /* ESERCIZIO 1 */
