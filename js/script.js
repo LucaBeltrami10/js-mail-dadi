@@ -58,10 +58,13 @@ let emailUtente = prompt('inserisci email')
 const listaEmail = ['luca@gmail.com', 'marco@gmail.com', 'mario@gmail.com']
 console.log(listaEmail)
 
+const accessResult = document.getElementById('access-result')
+
 for (let i=0; i<listaEmail.length; i++){
     console.log(listaEmail[i])
     if(emailUtente === listaEmail[i]){
         console.log('accesso consentito')
+        accessResult.classList.remove('d-none')
     }else if(emailUtente !== listaEmail[i]){
         console.log('accesso negato')
     }
