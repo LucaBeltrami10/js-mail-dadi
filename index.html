@@ -10,24 +10,27 @@
 </head>
 <body>
     <div id="es-2" class="my_container container-fluid mt-5">
-        <form class="row g-3">
+        <div class="row g-3">
             <div class="col-4">
                 <label for="text" class="form-label fw-bold">Suffisso Email</label>
                 <input type="text" class="form-control" id="input-suffiso" aria-describedby="emailHelp">
             </div>
             <div class="col-4">
-                <label for="text" class="form-label fw-bold">Seleziona Dominio</label>
+                <label for="text" class="form-label fw-bold">Dominio Email</label>
                 <select id="selezione-dominio" class="form-select form-control" aria-label="Default select example">
                     <option value="1">@Gmail.com</option>
                     <option value="2">@Outlook.com</option>
                 </select>
-            </div>  
-        </form>
+            </div>
+            <div class="col-4 align-self-end">
+                <button id="form_button" type="submit" class="col-3 btn btn-primary mt-3">invia</button> 
+            </div>
+        </div>
         <div>
-            <button id="form_button" type="submit" class="col-3 btn btn-primary mt-3">invia</button>
+            
         </div>
     </div>
-    <div class="my_container container-fluid text-center py-4">
+    <div id="container-access" class="my_container container-fluid text-center py-4">
         <p id="access-allowed" class="container-fluid text-center text-uppercase fw-bold">Accesso negato. Inserisci email valida.</p>
     </div>
 

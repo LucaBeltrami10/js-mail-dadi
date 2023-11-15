@@ -77,18 +77,20 @@ for (let i=0; i<listaEmail.length; i++){
 
 /* esercizio 2 con html e valori PROVE */
 
+/* array con email scritta prefisso email + valore selezione dominio */
 const listaEmail = ['luca1', 'marco2', 'mario1', 'rebecca1', 'giulia2', 'mario2', 'matteo1', 'mauro2', 'pollo2', 'lasagnetta2']
 console.log(listaEmail)
 
+/* inserite variabili per posizione elementi in html */
 const inputPrefissoEmail = document.getElementById('input-suffiso')
-const selectTag = document.getElementById('selezione-dominio')
+const selectedDom = document.getElementById('selezione-dominio')
 const formButton = document.getElementById('form_button')
 
 const accessAllowed = document.getElementById('access-allowed') 
 const accessDenied = document.getElementById('access-denied')
 
 formButton.addEventListener('click', function(){
-    let dominioValue = selectTag.value
+    let dominioValue = selectedDom.value
     let prefissoValue = inputPrefissoEmail.value
     console.log(dominioValue)
     console.log(prefissoValue)
@@ -102,6 +104,7 @@ formButton.addEventListener('click', function(){
         if( emailGen == listaEmail[i]){
             accessAllowed.innerHTML = 'accesso consentito'
             document.getElementById('es-2').classList.add('d-none')
+            document.getElementById('container-access').classList.add('bc_allow')
         }
     }
 })
