@@ -92,8 +92,8 @@ const accessDenied = document.getElementById('access-denied')
 formButton.addEventListener('click', function(){
     let dominioValue = selectedDom.value
     let prefissoValue = inputPrefissoEmail.value
-    console.log(dominioValue)
-    console.log(prefissoValue)
+    /* console.log(dominioValue)
+    console.log(prefissoValue) */
 
     let emailGen = prefissoValue + dominioValue
     console.log(emailGen)
@@ -102,8 +102,9 @@ formButton.addEventListener('click', function(){
         console.log('avvio ciclo di comparazione email con quelle in lista')
 
         if( emailGen == listaEmail[i]){
-            accessAllowed.innerHTML = 'accesso consentito'
+            accessAllowed.innerHTML = 'accesso consentito!'
             document.getElementById('es-2').classList.add('d-none')
+            document.getElementById('es-1').classList.remove('d-none')
             document.getElementById('container-access').classList.add('bc_allow')
         }
     }
