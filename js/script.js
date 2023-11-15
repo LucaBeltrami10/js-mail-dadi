@@ -47,11 +47,12 @@ goButton.addEventListener('click', function(){
 
 /* ESERCIZIO 2 */
 
+
+
+/* const listaEmail = ['luca@gmail.com', 'marco@gmail.com', 'mario@gmail.com']
+console.log(listaEmail) */
+
 /* let emailUtente = prompt('inserisci email')
-
-const listaEmail = ['luca@gmail.com', 'marco@gmail.com', 'mario@gmail.com']
-console.log(listaEmail)
-
 const accessResult = document.getElementById('access-result')
 
 for (let i=0; i<listaEmail.length; i++){
@@ -70,16 +71,24 @@ for (let i=0; i<listaEmail.length; i++){
 /* 4) dentro ad ogni ciclo metto in relazione l'email inserita con l'email corrispondente al numero del ciclo in corso */
 
 
-const inputSuffissoEmail = document.getElementById('input-suffiso')
+const listaEmail = ['luca1', 'marco2', 'mario1']
+console.log(listaEmail)
+
+const inputPrefissoEmail = document.getElementById('input-suffiso')
 const selectTag = document.getElementById('selezione-dominio')
 const formButton = document.getElementById('form_button')
 
 formButton.addEventListener('click', function(){
-    let selectValue = selectTag.value
-    let suffissoValue = inputSuffissoEmail.value
-    console.log(selectValue)
-    console.log(suffissoValue)
+    let dominioValue = selectTag.value
+    let prefissoValue = inputPrefissoEmail.value
+    console.log(dominioValue)
+    console.log(prefissoValue)
+    let emailGen = prefissoValue + dominioValue
+    console.log(emailGen)
+
+    if ()
 })
+
 
 
 
