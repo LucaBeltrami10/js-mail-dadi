@@ -55,5 +55,6 @@ goButton.addEventListener('click', function(){
 
 let emailUtente = prompt('inserisci email')
 
-
+const listaEmail = ['luca@gmail.com', 'marco@gmail.com', 'mario@gmail.com']
+console.log(listaEmail)
 
